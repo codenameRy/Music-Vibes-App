@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/FTWD-OCT-2019/ironplate/issues"
   },
-  "homepage": "https://github.com/FTWD-OCT-2019/ironplate#readme"
+  "homepage": "https://github.com/FTWD-OCT-2019/ironplate#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "genius-lyrics": "^3.0.0"
+  }
 }

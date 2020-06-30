@@ -4,8 +4,9 @@ import Home from './components/home/Home';
 import NotFound from './components/404/NotFound.js';
 import SignUp from './components/auth/SignUp';
 import LogIn from './components/auth/LogIn';
-import Profile from './components/profile/Profile'
-import actions from './services/index'
+import Profile from './components/profile/Profile';
+import actions from './services/index';
+import SearchBar from './components/searchbar/SearchBar'
 
 class App extends Component {
   
@@ -44,14 +45,14 @@ class App extends Component {
            <NavLink to="/log-in">Log In |</NavLink>
            </Fragment>
           }
-        
+          <SearchBar/>
       </nav>
       <Switch>
         <Route exact path="/" render={(props) => <Home {...props} />} />
         <Route exact path="/sign-up" render={(props)=><SignUp {...props} setUser={this.setUser} />} />
         <Route exact path="/log-in" render={(props) => <LogIn {...props} setUser={this.setUser}/>} />
         <Route exact path="/profile" render={(props) => <Profile {...props} user={this.state}/>} />
-        
+        {/* <Route exact path="/searchbar/:trackname" render={(props) => <SongLyrics {...props} />} /> */}
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>

@@ -20,6 +20,16 @@ const actions = {
   },
   logOut: async () => {
     return await service.get('/logout')
+  },
+
+   //Sending Genius API Search Results for songs and artists to CLIENT
+   getArtist: async (artistsandsongs) => {
+    return await service.get(`/search/${artistsandsongs}`)
+  },
+
+   //Sending lyrics info from NPM module to Client
+   getLyrics: async (song) => {
+    return await service.get(`/searchNPM/${song}`)
   }
 };
 
