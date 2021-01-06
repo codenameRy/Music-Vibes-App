@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/FTWD-OCT-2019/ironplate#readme",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "genius-lyrics": "^3.0.0"
   }
 }
